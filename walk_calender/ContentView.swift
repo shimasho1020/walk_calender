@@ -35,7 +35,7 @@ struct ContentView: View {
                     let start = days[0].getWeekDay()
                     let end = start + days.count
                     
-                    var maxBlock: Int = end <= 35 ? 34 : 41
+                    let maxBlock: Int = end <= 35 ? 34 : 41
                     
                     ForEach((0...maxBlock), id: \.self) {
                         index in
